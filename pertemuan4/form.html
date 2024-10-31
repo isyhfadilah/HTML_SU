@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        
+    </style>
+    
+</head>
+<body>
+    <h2>Form Pendaftaran</h2>
+    <form action="">
+        <label>Username</label>
+        <input type="text">
+        <br>
+
+        <label>Email</label>
+        <input type="email">
+        <br>
+
+        <label>Password</label>
+        <input type="password">
+        <br>
+
+        <label>Tanggal Lahir</label>
+        <input type="date">
+        <br><br>
+
+        <label>Jenis Kelamin</label>
+        <div class="container">
+            <label for="pria">Pria</label>
+            <input type="radio" name="jk" id="pria">
+    
+            <label for="wanita">Wanita</label>
+            <input type="radio" name="jk" id="wanita">
+        </div>
+        <br>
+
+        <label>Hobi Anda saat ini yaitu</label>
+        <div class="container">
+            <input type="checkbox"><label>Menggambar</label>
+            <input type="checkbox"><label>Menyanyi</label>
+            <input type="checkbox"><label>Ngoding</label>
+        </div>
+        <br>
+
+        <label>Kota Anda saat ini</label>
+        <select>
+            <option>Bandung</option>
+            <option>Jakarta</option>
+            <option>Surabaya</option>
+            <option>Makassar</option>
+            <option>Cilacap</option>
+        </select>
+        <br><br>
+
+        <label>Tuliskan biografi singkat Anda</label>
+        <textarea rows="20" cols="80" maxlength="26" placeholder="ketik didieu teman"></textarea>
+        <br><br>
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Hapus</button>
+    </form>
+</body>
+</html>
